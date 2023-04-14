@@ -1,12 +1,56 @@
 <!DOCTYPE html>
 <html>
 
+<script src="https://applepay.cdn-apple.com/jsapi/v1/apple-pay-sdk.js"></script>
+<script src="applepay.js"></script>
+
 <head>
-    <title>Hybrid Artificial Intelligence</title>
+    <meta charset="utf-8">
+    <title>Hybrid AI</title>
 </head>
 
-<body>
+<header>
+    <div>
+        <!--Draw OpenAI Logo-->
+        <svg viewBox="-90 -90 180 180" xmlns="http://www.w3.org/2000/svg" style="background-color: transparent;"
+            width="2%" height="2%">
+            <path id="a" fill="white" d="
+                                        M 0 -23
+                                        V -32
+                                        L 52.5 -2
+                                        Q 55.8 0 56 3.5
+                                        V 42.7
+                                        A 44 44 0 0 1 -24.4 70.5
+                                        H -10
+                                        A 33.3 33.3 0 0 0 44 46
+                                        V 2.3">
+            </path>
+            <use href="#a" transform="rotate(60)"></use>
+            <use href="#a" transform="rotate(120)"></use>
+            <use href="#a" transform="rotate(180)"></use>
+            <use href="#a" transform="rotate(240)"></use>
+            <use href="#a" transform="rotate(300)"></use>
+        </svg>
 
+        <h1 class="title">Hybrid AI</h1>
+    </div>
+
+    <div id="footer">
+        <style>
+            apple-pay-button {
+                --apple-pay-button-width: 300px;
+                --apple-pay-button-height: 30px;
+                --apple-pay-button-border-radius: 3px;
+                --apple-pay-button-padding: 0px 0px;
+                --apple-pay-button-box-sizing: border-box;
+            }
+        </style>
+        <apple-pay-button buttonstyle="black" type="plain" locale="zh"></apple-pay-button>
+    </div>
+</header>
+
+<body style="background-color: rgb(10,10,10);">
+    <link type="text/css" rel="stylesheet" href="style.css" />
 </body>
 
 </html>
